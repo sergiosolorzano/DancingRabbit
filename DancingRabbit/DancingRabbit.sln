@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DancingRabbit", "DancingRabbit.csproj", "{548368F9-818C-CC17-6F1C-AFE5510CE3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DancingRabbit.Editor", "DancingRabbit.Editor.csproj", "{A7C73027-C2B1-84B1-54C6-406E9FCC4427}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548368F9-818C-CC17-6F1C-AFE5510CE3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548368F9-818C-CC17-6F1C-AFE5510CE3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548368F9-818C-CC17-6F1C-AFE5510CE3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548368F9-818C-CC17-6F1C-AFE5510CE3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C73027-C2B1-84B1-54C6-406E9FCC4427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C73027-C2B1-84B1-54C6-406E9FCC4427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C73027-C2B1-84B1-54C6-406E9FCC4427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C73027-C2B1-84B1-54C6-406E9FCC4427}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
