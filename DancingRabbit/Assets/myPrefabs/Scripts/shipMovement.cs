@@ -12,14 +12,15 @@ public class shipMovement : MonoBehaviour {
     float rotationSpeed=0.1f;
     private Vector3 targetDirection;
     bool thisIsLastWaypoint=false;
+    public bool UIreadyToFade = false;
 
     IEnumerator Followpath()
     {
         foreach (Transform waypoint in path)
         {
-            Debug.Log("Targeting waypoint " + waypoint.name);
             yield return StartCoroutine(Move(waypoint.position, speed, waypoint));
         }
+
     }
 
     IEnumerator Move(Vector3 destination, float speed, Transform waypoint)
@@ -42,6 +43,8 @@ public class shipMovement : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
             yield return null;
         }
+        if (waypoint.tag == "lastWaypoint")
+            UIreadyToFade = true;
     }
 
 	// Update is called once per frame

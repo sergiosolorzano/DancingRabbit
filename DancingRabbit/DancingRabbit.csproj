@@ -223,6 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\myPrefabs\Scripts\ARCMovement.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\canvasFade.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\DestroyAnim.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\laser.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\Movement.cs" />
