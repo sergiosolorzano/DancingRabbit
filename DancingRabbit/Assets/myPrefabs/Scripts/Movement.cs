@@ -89,7 +89,6 @@ public class Movement : MonoBehaviour {
 
 void Update()
     {
-
         //Tank Raycast
         Vector3 rayTankOrigin = transform.position;
         Vector3 rayTankDirection = -transform.up;

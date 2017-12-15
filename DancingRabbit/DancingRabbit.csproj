@@ -222,12 +222,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\myPrefabs\ARCMovement.cs" />
-    <Compile Include="Assets\myPrefabs\DestroyAnim.cs" />
-    <Compile Include="Assets\myPrefabs\laser.cs" />
-    <Compile Include="Assets\myPrefabs\Movement.cs" />
-    <Compile Include="Assets\myPrefabs\MoveTest.cs" />
-    <Compile Include="Assets\myPrefabs\shotMove.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\ARCMovement.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\DestroyAnim.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\laser.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\Movement.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\MoveTest.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\Oscillator.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\shipMovement.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\shotMove.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultSmartTerrainEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
