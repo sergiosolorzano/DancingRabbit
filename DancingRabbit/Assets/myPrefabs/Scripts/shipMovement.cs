@@ -8,8 +8,8 @@ using Random = UnityEngine.Random;
 public class shipMovement : MonoBehaviour {
 
     public Transform[] path;
-    float speed = 40f;
-    float rotationSpeed=1f;
+    float speed = 0.3f;
+    float rotationSpeed=0.1f;
     private Vector3 targetDirection;
     bool thisIsLastWaypoint=false;
 
