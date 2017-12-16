@@ -229,6 +229,7 @@
     <Compile Include="Assets\myPrefabs\Scripts\Movement.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\MoveTest.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\Oscillator.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\presentCollision.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\shipMovement.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\shotMove.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />

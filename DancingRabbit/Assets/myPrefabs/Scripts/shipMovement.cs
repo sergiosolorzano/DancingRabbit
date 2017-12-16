@@ -13,6 +13,11 @@ public class shipMovement : MonoBehaviour {
     private Vector3 targetDirection;
     public bool UIreadyToFade = false;
     public GameObject carrier;
+    public GameObject presentTop;
+    public GameObject presentBox;
+    public Rigidbody rbCarrier;
+    public Rigidbody rbBox;
+    public Rigidbody rbTop;
 
     IEnumerator Followpath()
     {
@@ -44,17 +49,35 @@ public class shipMovement : MonoBehaviour {
             yield return null;
         }
         if (waypoint.tag == "dropCarrier")
+        {
             carrier.transform.SetParent(null);
+            
+            presentBox.transform.SetParent(null);
+            presentTop.transform.SetParent(null);
+            presentTop.transform.parent = presentBox.transform;
+            rbBox.isKinematic = false;
+            
+            //rbTop.isKinematic = false;
+            //rbTop.useGravity = true;
+            //rbBox.useGravity= true;
+        }
 
         if (waypoint.tag == "lastWaypoint")
             UIreadyToFade = true;
     }
+    private void Start()
+    {
+        rbCarrier= carrier.GetComponent<Rigidbody>();
+        rbBox = presentBox.GetComponent<Rigidbody>();
+        rbTop = presentBox.GetComponent<Rigidbody>();
+    }
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(Followpath());
         }
+
     }
 }
