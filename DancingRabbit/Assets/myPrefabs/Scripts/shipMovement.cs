@@ -11,8 +11,8 @@ public class shipMovement : MonoBehaviour {
     float speed = 0.3f;
     float rotationSpeed=0.1f;
     private Vector3 targetDirection;
-    bool thisIsLastWaypoint=false;
     public bool UIreadyToFade = false;
+    public GameObject carrier;
 
     IEnumerator Followpath()
     {
@@ -31,9 +31,9 @@ public class shipMovement : MonoBehaviour {
         
         if (waypoint.tag == "lastWaypoint")
             speed = speed / 6;//landing speed at last waypoint
-
+        
         //rotate and move ship
-            while (Vector3.Distance(transform.position, destination) > 0.01f)
+        while (Vector3.Distance(transform.position, destination) > 0.01f)
         {
             if (waypoint.tag != "lastWaypoint")
                 transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
@@ -43,6 +43,9 @@ public class shipMovement : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
             yield return null;
         }
+        if (waypoint.tag == "dropCarrier")
+            carrier.transform.SetParent(null);
+
         if (waypoint.tag == "lastWaypoint")
             UIreadyToFade = true;
     }
