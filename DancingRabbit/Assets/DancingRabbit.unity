@@ -573,6 +573,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 114726320}
+  - component: {fileID: 114726321}
   - component: {fileID: 114726319}
   m_Layer: 0
   m_Name: backgroundMusic
@@ -591,8 +592,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90e92b5f16e852c44abe56008c49deb5, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -674,6 +675,19 @@ Transform:
   m_Father: {fileID: 1452952616}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114726321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114726318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29122606bd0fa6343b6c1c2457181f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInDuration: 3
+  fadeOutDuration: 5
 --- !u!1 &119443062
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,13 +824,13 @@ MonoBehaviour:
   - {fileID: 1283842156}
   - {fileID: 371955284}
   - {fileID: 1698023870}
-  UIreadyToFade: 0
   carrier: {fileID: 1697485258}
   presentTop: {fileID: 992142820}
   presentBox: {fileID: 1592537222}
   rbCarrier: {fileID: 0}
   rbBox: {fileID: 0}
   rbTop: {fileID: 0}
+  UIreadyToFade: 0
 --- !u!1 &121621893 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9670b2b1069175048bf59a6ba9990e96, type: 3}
@@ -1015,6 +1029,7 @@ GameObject:
   - component: {fileID: 162213201}
   - component: {fileID: 162213200}
   - component: {fileID: 162213199}
+  - component: {fileID: 162213202}
   m_Layer: 0
   m_Name: Snow
   m_TagString: Untagged
@@ -1136,7 +1151,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1442673616
+  randomSeed: -701267513
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4406,6 +4421,17 @@ Transform:
   m_Father: {fileID: 46821310}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
+--- !u!114 &162213202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162213198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bc4298d3e11b54ca1a426188a3eaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &175438458 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 8d23956ffe03fc64899d875e9cb89ebf, type: 3}
@@ -26749,13 +26775,13 @@ MonoBehaviour:
   - {fileID: 405911811}
   - {fileID: 371955284}
   - {fileID: 1698023870}
-  UIreadyToFade: 0
   carrier: {fileID: 0}
   presentTop: {fileID: 0}
   presentBox: {fileID: 0}
   rbCarrier: {fileID: 0}
   rbBox: {fileID: 0}
   rbTop: {fileID: 0}
+  UIreadyToFade: 0
 --- !u!1001 &1970332794
 Prefab:
   m_ObjectHideFlags: 0

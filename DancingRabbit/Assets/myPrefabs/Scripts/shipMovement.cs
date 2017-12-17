@@ -6,18 +6,26 @@ using System;
 using Random = UnityEngine.Random;
 
 public class shipMovement : MonoBehaviour {
-
+    //ship movement
     public Transform[] path;
     float speed = 0.3f;
     float rotationSpeed=0.1f;
     private Vector3 targetDirection;
-    public bool UIreadyToFade = false;
+    //carrier and presents
     public GameObject carrier;
     public GameObject presentTop;
     public GameObject presentBox;
     public Rigidbody rbCarrier;
     public Rigidbody rbBox;
     public Rigidbody rbTop;
+    //UI
+    public bool UIreadyToFade = false;
+    /*//music
+    public GameObject bgMusicObject;
+    public float fadeOutDuration;
+    music fadeOutMusic;
+    AudioSource bgMusic;*/
+
 
     IEnumerator Followpath()
     {
@@ -25,7 +33,6 @@ public class shipMovement : MonoBehaviour {
         {
             yield return StartCoroutine(Move(waypoint.position, speed, waypoint));
         }
-
     }
 
     IEnumerator Move(Vector3 destination, float speed, Transform waypoint)
@@ -70,6 +77,8 @@ public class shipMovement : MonoBehaviour {
         rbCarrier= carrier.GetComponent<Rigidbody>();
         rbBox = presentBox.GetComponent<Rigidbody>();
         rbTop = presentBox.GetComponent<Rigidbody>();
+        //bgMusic = bgMusicObject.GetComponent<AudioSource>();
+        //fadeOutMusic= bgMusicObject.GetComponent<music>();
     }
 
     // Update is called once per frame
@@ -77,7 +86,7 @@ public class shipMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(Followpath());
+            //StartCoroutine(fadeOutMusic.FadeOut(bgMusic, fadeOutDuration));       
         }
-
     }
 }

@@ -228,7 +228,9 @@
     <Compile Include="Assets\myPrefabs\Scripts\laser.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\Movement.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\MoveTest.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\music.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\Oscillator.cs" />
+    <Compile Include="Assets\myPrefabs\Scripts\particlesFront.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\presentCollision.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\shipMovement.cs" />
     <Compile Include="Assets\myPrefabs\Scripts\shotMove.cs" />
