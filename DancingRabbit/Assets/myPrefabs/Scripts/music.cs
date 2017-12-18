@@ -44,13 +44,13 @@ public class music : MonoBehaviour {
 
     public IEnumerator FadeIn(AudioSource audiosource, float fadeTime)
     {
-        startVolume = tmpVol= 0.4f;
+        audiosource.volume = 0.1f;//start volume
+        float targetVolume = 1f;
         audiosource.Play();
-        bgMusic.volume = 0.1f;
 
-        while(audiosource.volume<0.99f)
+        while (audiosource.volume<targetVolume)
         {
-            tmpVol += startVolume * (Time.deltaTime / fadeTime);
+            tmpVol += targetVolume* (Time.deltaTime / fadeTime);
             audiosource.volume = Mathf.Min(tmpVol, 1);
             yield return null;
         }
