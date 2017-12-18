@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c6a2fb353a4e82e40adb92d14510a6b7
+timeCreated: 1513592123
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AlaskanNights
+  fontNames:
+  - AlaskanNights
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
